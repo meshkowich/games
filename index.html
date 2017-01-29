@@ -1,52 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>bear&#39;s games by meshkowich</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+<title>EVO 1 task</title>
+<meta charset="UTF-8">
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/meshkowich/games">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/meshkowich/games/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/meshkowich/games/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+<!-- Add jQuery library -->
+<script
+  src="http://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
 
-    <div class="wrapper">
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
 
-      <section>
-        <div id="title">
-          <h1>bear&#39;s games</h1>
-          <p>i put my games here</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/meshkowich">meshkowich</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<!-- My css -->
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+</head>
+<body>
 
 
-<p>Playtime is here. Yay. Go!</p>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '50%',
+		height		: '60%',
+		autoSize	: true,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
 
-        <p><a href="flappy/flappy.html"> KTTEH IN TEH SKY WIT BOMBS N ROCKETS </a></p>
-        <p><a href="eraser/eraser.html"> ERA23R </a></p>
-      </section>
 
+  <div class="navigation">
+    <div class="logo">
+      <img src="img/logo.png">
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+      <h1>Jaukių namų tradicija</h1>
+      <img src="img/line.png">
+      <p>NAMŲ PYNĖS – nauja gyvenvietė sostinėje, Tuskulėnų<br>
+      gatvėje, supinta iš septynių daugiabučių, ypatingoje,<br>
+      duona kvepiančioje Vilniaus vietoje.</p>
+      <p>130 metų šeimomis besirūpinusi seniausia duonos<br>
+      kepykla užleidžia vietą naujai, jaukių namų tradicijai.<br>
+      Registruokitės ir informaciją apie projekto butus<br>
+      gaukite PIRMIEJI!</p>
+    <section>
+      <ul>
+        <li>
+          <img src="img/pin.png" class="sign">
+          <br>
+          <a class="button fancybox" rel="group" href="img/wrong.jpg">vieta mieste</a>
+        </li>
+        <li>
+          <img src="img/key.png" class="sign">
+          <br>
+          <a class="button fancybox" data-fancybox-type="iframe" href="popup.html">noriu būti pirmas</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <footer>
+    <div id="footer_left">
+      © 2016 Namų pynės
+    <br>
+      Svetainė sukurta: EVO MEDIA
+    </div>
+    <div id="footer_center">
+      Projektą plėtoja:
+      <a href="http://www.eika.lt" target="_blank"><img src="img/eika.png"></a>
+  </footer>
+</body>
 </html>
